@@ -14,5 +14,5 @@ const myFloat = 23.0;
 const myString="23";
 console.log(myNum===myString);
 console.log(Number(true));
-
+console.log()
 
