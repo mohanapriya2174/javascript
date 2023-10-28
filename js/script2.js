@@ -20,3 +20,43 @@
 // const calAge=birthYear=>2023-birthYear;
 // // const age=calAge(2004);
 // console.log(`i'm ${calAge(2004)} now!😎😁😀`);
+
+
+// const monaArrey=[
+//     'mona',
+//     'priya',
+//     2023-2004,
+//     ['sanga','aarthi']
+// ]
+// const mona={
+//     firstName:'mona',
+//     lastName:'priya',
+//     age:2023 - 2004,
+//     frinds:['sanga','saran']
+//     
+// };
+// const wishTo=prompt("what would you like to know about mona");
+// console.log(mona[wishTo]);
+const mona = {
+    firstName:'mona',
+    lastName:'priya',
+    birthYear: 2004,
+    profession:"student",
+    frinds:['sanga','saran'],
+    driverLicence:true,
+    calAge: function (){
+        // console.log(this);
+        return 2023-this.birthYear;
+    },
+    getSummary:function(){
+        return(`${this.firstName} is a ${this.profession}, and she has ${this.driverLicence?'a':'no'} driving licence`);
+    }
+};
+console.log(mona.calAge());
+
+// console.log(mona.calAge());
+// console.log(mona.calAge());
+// console.log(mona.calAge());
+ 
+console.log(mona.getSummary());
+console.log(`${mona.firstName} is a ${mona.calAge()} year old girl, and she has ${mona.driverLicence?'a':'no'} driving licence`);
