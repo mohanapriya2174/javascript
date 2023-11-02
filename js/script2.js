@@ -1,9 +1,6 @@
-
 // function gramCal(eachWeights){
 //     return eachWeights * 25;
 // }
-
-
 
 // function foodPrefered(idli,vada){
 //     const idliWeight=gramCal(idli);
@@ -21,7 +18,6 @@
 // // const age=calAge(2004);
 // console.log(`i'm ${calAge(2004)} now!😎😁😀`);
 
-
 // const monaArrey=[
 //     'mona',
 //     'priya',
@@ -33,7 +29,7 @@
 //     lastName:'priya',
 //     age:2023 - 2004,
 //     frinds:['sanga','saran']
-//     
+//
 // };
 // const wishTo=prompt("what would you like to know about mona");
 // console.log(mona[wishTo]);
@@ -57,7 +53,7 @@
 // // console.log(mona.calAge());
 // // console.log(mona.calAge());
 // // console.log(mona.calAge());
- 
+
 // console.log(mona.getSummary());
 // console.log(`${mona.firstName} is a ${mona.calAge()} year old girl, and she has ${mona.driverLicence?'a':'no'} driving licence`);
 //--------------------------------------------
@@ -77,7 +73,7 @@
 //     calcBMI:function(){
 //         return this.mass/this.height**2;
 //      }
-   
+
 // }
 // console.log(Mark.calcBMI());
 // console.log(John.calcBMI());
@@ -102,10 +98,37 @@
 // }
 // console.log(newNew);
 
-let dice=Math.trunc(Math.random() * 6)+1;
+// let dice = Math.trunc(Math.random() * 6) + 1;
 
-while(dice!==6){
-    console.log (`you rolled a ${dice}`);
-    dice=Math.trunc(Math.random() * 6)+1;
-}
-const age =19;
+// while (dice !== 6) {
+//   console.log(`you rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+// }
+
+//
+// const tempamp = function (t1, t2) {
+//   const temp = t1.concat(t2);
+//   let max = 0;
+//   let min = 0;
+//   for (let i = 0; i < temp.length; i++) {
+//     const currtemp = temp[i];
+//     // if (typeof currtemp !== "Number") continue;
+//     if (currtemp > max) max = currtemp;
+//     if (currtemp < min) min = currtemp;
+//   }
+//   console.log(temp);
+//   console.log(max, min);
+//   return max - min;
+// };
+// console.log(tempamp([6, "error", 3, 9], [1, 10]));
+
+//-----------------------------------------------------------
+
+const printForcast = function (temp) {
+  let str = " ";
+  for (i = 0; i < temp.length; i++) {
+    str = str + `${temp[i]}*C in ${i + 1} day...`;
+  }
+  console.log("...." + str);
+};
+printForcast([17, 21, 23]);
