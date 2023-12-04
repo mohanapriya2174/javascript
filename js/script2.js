@@ -1,3 +1,4 @@
+"use strict";
 // function gramCal(eachWeights){
 //     return eachWeights * 25;
 // }
@@ -124,11 +125,45 @@
 
 //-----------------------------------------------------------
 
-const printForcast = function (temp) {
-  let str = " ";
-  for (i = 0; i < temp.length; i++) {
-    str = str + `${temp[i]}*C in ${i + 1} day...`;
-  }
-  console.log("...." + str);
+// const printForcast = function (temp) {
+//   let str = " ";
+//   for (i = 0; i < temp.length; i++) {
+//     str = str + `${temp[i]}*C in ${i + 1} day...`;
+//   }
+//   console.log("...." + str);
+// };
+// printForcast([17, 21, 23]);
+let age = 21;
+let oldage = age;
+age = 31;
+console.log(age);
+console.log(oldage);
+let me = {
+  name: "mona",
+  age: 21,
 };
-printForcast([17, 21, 23]);
+let frnd = me;
+me.age = 22;
+console.log(me);
+console.log(frnd);
+let lastname = "willem";
+let oldLastname = lastname;
+lastname = "devis";
+console.log(lastname);
+console.log(oldLastname);
+
+let mona = {
+  firstName: "mohanapriya",
+  lastName: "sarvanan",
+  age: 27,
+  family: ["shoba", "gopi", "hari"],
+};
+const monacopy = Object.assign({}, mona);
+monacopy.lastName = "dharanidharan";
+console.log(mona);
+console.log(monacopy);
+
+monacopy.family.push("amsa", "gnanam");
+
+console.log(monacopy);
+console.log(mona);
